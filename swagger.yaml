@@ -1,0 +1,77 @@
+openapi: 3.0.0
+info:
+  title: tshirt api for ecomm
+  description: our first social app -swati
+  version: 1.0.1
+  contact:
+  email: swatistiwati13@gmail.com
+  url: "https://LCO.dev"
+
+
+servers:
+  - url: "{protocol}://localhost:4000/api/{version}"
+    description: for local host
+    variables:
+      version:
+        enum:
+          - v1
+          - v2
+        default: v1
+        protocol:
+        enum:
+          - http
+          - https
+        default: http
+
+
+components:
+  securitySchemes:
+    cookieAuth:
+     type: apikey
+     in: cookie
+     name: token
+  BearerAuth:
+   type: http
+   scheme: bearer
+
+# paths:
+#   /dummy:
+#    get:
+#     tags:
+#       - Home
+#     summary: returns a greet message from swati
+#     responses: 
+#       200:
+#        description: all good success
+#        content:
+#          application/json:
+#            schema:
+#              type: string
+#              example: "mystring"
+#         400:
+#          description: Bad request 
+#         500:
+#          description: internal server error
+
+
+#       # /lcoobject:
+#       #  get:
+#       #   tags:
+#       #     - Object
+#       #   summary: returns a uniqure course
+#       #   response: 
+#       #     200:
+#       #      description: all good success
+#       #      content:
+#       #      application/json:
+#       #       schema:
+#       #        type: string
+#       #        example: "mystring"
+#       #   400:
+#       #    description: Bad request 
+#       #   500:
+#       #    description: internal server error
+
+
+         
+

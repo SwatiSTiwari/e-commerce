@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>post post</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container mt-4 col-4 col-offset-6">
+      <h1 class="display-3">POST FORM</h1>
+      <form method="post" action="/api/v1/signup" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="name" class="form-label">name </label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            id="FnameInputEmail1"
+            aria-describedby="fnameHelp"
+          />
+          <div id="fnameHelp" class="form-text">
+            We'll never share your name with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">email</label>
+          <input
+            type="text"
+            name="email"
+            class="form-control"
+            id="LnameInputPassword1"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            id="LnameInputPassword1"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="photo" class="form-label">samplefile</label>
+          <input
+            type="file"
+            name="photo"
+            class="form-control"
+            id="LnameInputPassword1"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
